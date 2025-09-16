@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid grey;
+        }
+        
+        #header {
+            background: #134374;
+            color: #fff;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        #header span {
+            font-size: 13px;
+            font-weight: normal;
+            display: block;
+            margin-top: 5px;
+            color: #ddd;
+        }
+        
+        #nav {
+            background: #1c4c87;
+            padding: 5px;
+        }
+        
+        #nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        #nav a:hover {
+            text-decoration: underline;
+        }
+        
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+        
+        #left,
+        #right {
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        #left {
+            width: 50%;
+            border-right: 1px solid #ddd;
+        }
+        
+        #right {
+            width: 50%;
+        }
+        
+        h2 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: normal;
+            font-size: 16px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        form label {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 90%;
+            padding: 5px;
+            margin-top: 2px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+        }
+        
+        form textarea {
+            height: 80px;
+            resize: none;
+        }
+        
+        form input[type="submit"],
+        form input[type="reset"] {
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .info p {
+            margin: 4px 0;
+            font-size: 12px;
+        }
+        
+        .discounts img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .discounts p {
+            font-size: 12px;
+            line-height: 1.3;
+        }
+        
+        .discounts a {
+            color: #134374;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .discounts a:hover {
+            text-decoration: underline;
+        }
+        
+        #footer {
+            background: #134374;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+        }
+        /* Tô màu chữ trong phần "Why Not Contact Us Today!" */
+        
+        #left p {
+            font-size: 12px;
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            FlowerBox 360
+            <span>...to get your daily dose of luxury roses!</span>
+        </div>
+        <div id="nav">
+            <a href="#">Home</a>
+            <a href="#">Promotion</a>
+            <a href="#">Gift Baskets</a>
+            <a href="#">Flowers Services </a>
+            <a href="#">About</a>
+            <input type="text" placeholder="Search in site... " style="float:right; margin-top:2px; padding: 3px 5px;" />
+            <button style="float:right; margin-top:2px; margin-right:5px;">GO</button>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="content">
+            <div id="left">
+                <h2>Why Not Contact Us Today!</h2>
+                <p>
+                    For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the highest quality flowers found on online, but thatt you can do so at a great value.
+                </p>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" id="telephone" name="telephone">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </form>
+            </div>
+            <div id="center">
+                <h2>FlowerBox 360 Info!</h2>
+                <div class="info">
+                    <p>Openationg Hours: <br /> Monday-Friday:9:000am-5:00pm <br /> Saturday:9:00am-1.00pm. <br /> Sunday:CLosed (No Deliveries) <br /> ORDER ONLINE 24/7
+                    </p>
+                    <p>
+                        Software Engineering Dept. <br /> Information Technology Faculty <br /> First Floor, H Building <br />
+                    </p>
+                    <p>
+                        12 Nguyen Van Bao, Ward 4, <br /> Go Vap District, Ho Chi Minh City <br /> Tel: 0283.8940 390 <br /> Fax: 0283.9940 954 <br />
+                    </p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="discount">
+                    <h2>Discounts & Specials</h2>
+                    <img src="./img/rose.png" alt="Hoa hong">
+                    <p>
+                        FlowerBox 360 offers many great discounts throught the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderfull troppps!
+                    </p>
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright © 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City
+        </div>
+    </div>
+</body>
+
+</html>
